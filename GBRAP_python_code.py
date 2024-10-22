@@ -1,5 +1,4 @@
-print("The code saves the protein Note info, but not seperating for Nuclear,Ribosomal currently")
-print("check if the overlaps are processed correctly")
+#This is the GBRAP python code which takes gbff files as input and generates csv files as the output
 from datetime import datetime
 startTime = datetime.now()
 import re
