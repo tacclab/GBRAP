@@ -319,32 +319,33 @@ GBRAP returns in output a comma-separated file (CSV) that could be imported into
 
 In 1950, Erwin Chargaff discovered that the four nucleotides contained in a DNA double helix (A=Adenine, T=Thymine, C=Cytosine and G=Guanine) are symmetrically abundant in both strands of DNA. This symmetry was called Chargaff's first parity rule. In 1968, Chargaff also discovered that also on each DNA strand, the number of Adenines is almost equal to that of Thymines and the number of Cytosines is almost equal to that of Guanines. The first rule was easily explained by the fact that within DNA strands A matches with T, whereas C matches with G. On the single strand, however, this symmetry (Chargaff's second parity rule) is not easily explained. In 2020 four Italian researchers (Fariselli et al., 2020) discovered that this symmetry is linked to the energy of the DNA molecule which has greater stability when it has a Chargaff's second parity rule score close to one.
 
-Chargaff's second parity rule score calculated using an easy method (PF)
+† Chargaff's second parity rule score calculated using an easy method (PF)
 
 An easy way to calculate Chargaff’s second parity rule is this:
-
 
 ABS((((#A-#T))⁄((#A+#T)))+(((#C-#G))⁄((#C+#G))))
 
 where "#" means "number of" and A = Adenines, T = Thymines, C = Cytosines and G = Guanines. 
-In this way the perfect Chargaff’s second parity rule score is zero such as in case of “ATGC”. The minimum value depends on the length of the sequence. Python 3 code is as follows:
-def chargaff_pf(self,sequence):
-        '''calculates chargaff score PF'''
-        counts = Counter(sequence)
-        
-        def safe_pf(x,y):
-            if x==0 and y==0:
-                return 0
-            return abs((x-y)/(x+y))
-        
-        a_t=safe_pf(counts['A'], counts['T'])
-        c_g=safe_pf(counts['C'], counts['G'])
-        
-        PF=a_t+c_g
-        
-        return PF
 
-** Chargaff's second parity rule score calculated using Cristian Taccioli (CT) method 
+In this way the perfect Chargaff’s second parity rule score is zero such as in case of “ATGC”. The minimum value depends on the length of the sequence. 
+Python 3 code is as follows:
+        def chargaff_pf(self,sequence):
+                '''calculates chargaff score PF'''
+                counts = Counter(sequence)
+                
+                def safe_pf(x,y):
+                    if x==0 and y==0:
+                        return 0
+                    return abs((x-y)/(x+y))
+                
+                a_t=safe_pf(counts['A'], counts['T'])
+                c_g=safe_pf(counts['C'], counts['G'])
+                
+                PF=a_t+c_g
+                
+                return PF
+
+†  Chargaff's second parity rule score calculated using Cristian Taccioli (CT) method 
 
 Chargaff’s second parity rule score calculated using Cristian Taccioli’s method is:
 
@@ -355,68 +356,66 @@ The bases with the highest value must be placed in the denominator.
 "#" means "number of" and A = Adenines, T = Thymines, C = Cytosines and G = Guanines.
  Using this equation Chargaff’s second parity rule score is always between zero and one, where one is the maximum value. For example, the sequence “ATGC” has a perfect score which is one because the number of A is equal to the number of T, whereas the number of C is equal to the number of G. This score does not depend on sequence length. Chargaff’s second parity rule calculated using C.T method can be calculated in Python 3 as follow:
 
- def chargaff_ct(self,sequence):
-        ''' calculates chargaff score CT '''
-        counts = Counter(sequence)
-
-        def safe_ratio(x, y):
-            if x == 0 or y == 0:
-                return 0
-            return min(x, y) / max(x, y)
-
-        a_t_ratio = safe_ratio(counts['A'], counts['T'])
-        c_g_ratio = safe_ratio(counts['C'], counts['G'])
-
-        CT = (a_t_ratio + c_g_ratio) / 2
+         def chargaff_ct(self,sequence):
+                ''' calculates chargaff score CT '''
+                counts = Counter(sequence)
+        
+                def safe_ratio(x, y):
+                    if x == 0 or y == 0:
+                        return 0
+                    return min(x, y) / max(x, y)
+        
+                a_t_ratio = safe_ratio(counts['A'], counts['T'])
+                c_g_ratio = safe_ratio(counts['C'], counts['G'])
+        
+                CT = (a_t_ratio + c_g_ratio) / 2
 
 # Entropy scores calculation
 The concept of entropy was introduced in the early 19th century by Rudolf Julius Emanuel Clausius. It represents a characteristic quantity of the state of a physical system capable of expressing the ability of the system itself to be able to proceed to spontaneous transformations and, consequently, the loss of ability to do work when such transformations occur. In simplified terms, the value of entropy increases when the system undergoes spontaneous variations and therefore loses part of its ability to undergo such variations and perform work. In 1872 Ludwig Boltzmann generalized this concept through the study of statistical mechanics by defining entropy as the degree of disorder of a system. In 1948 Claude Elwood Shannon equated the degree of inaccuracy of a message with disorder. For Shannon, in fact, the entropy of information was the degree of complexity of a message that represents the minimum average number of symbols necessary for the encoding of the message itself.
 
-*** Shannon score 
+†  Shannon score 
 The term entropy in information sciences was introduced by Shannon in the paper "A Mathematical Theory of Communication" (Shannon, 1948). Shannon entropy is calculated as follows:
 H(X)=-∑_(i=1)^n▒〖〖P(x〗_i)logP〗 〖(x〗_i), where P is the frequency of nucleotides
 Python 3 code for Shannon entropy is:
-
-
-def shannon (self,seq,base_counts):
-        ''' calculates shanon entropy'''
-        nt=base_counts
-        if nt[0]==0:
-            return ''
-        else:
-            pA = float(nt[1]/nt[0])
-            pC = float(nt[2]/nt[0])
-            pG = float(nt[3]/nt[0])
-            pT = float(nt[4]/nt[0])
-            
-            if pA == 0:
-                pA=1
-            if pC == 0:
-                pC=1
-            if pG == 0:
-                pG=1
-            if pT == 0:
-                pT=1
-            
-            return -((pA*math.log2(pA))+(pT*math.log2(pT))+(pC*math.log2(pC))+(pG*math.log2(pG)))
-  
+        def shannon (self,seq,base_counts):
+                ''' calculates shanon entropy'''
+                nt=base_counts
+                if nt[0]==0:
+                    return ''
+                else:
+                    pA = float(nt[1]/nt[0])
+                    pC = float(nt[2]/nt[0])
+                    pG = float(nt[3]/nt[0])
+                    pT = float(nt[4]/nt[0])
+                    
+                    if pA == 0:
+                        pA=1
+                    if pC == 0:
+                        pC=1
+                    if pG == 0:
+                        pG=1
+                    if pT == 0:
+                        pT=1
+                    
+                    return -((pA*math.log2(pA))+(pT*math.log2(pT))+(pC*math.log2(pC))+(pG*math.log2(pG)))
+          
 
 † Topological entropy score
 
 Topological entropy is a nonnegative real number that is capable of measuring the complexity of a message. Topological entropy was first introduced in 1965 by Adler, Konheim and McAndrew (Adler et al. 1965). In 2011 Koslicki has defined a new approximation to topological entropy free from the finite sample effects and high dimensionality problems. The formula and code can be retrieved from Koslicki, 2011 (Koslicki et al. 2011).
 
-def topology (self,seq): 
-        '''calculates topological entropy'''
-        s= seq.replace("N","") ##Removes the N in the sequence
-        n = len(set(s)) # number of bases, this is usually equal to 4
-        length = len(s)
-        if len(s) != 0 and n > 1: 
-            logg = math.floor(math.log(length,n))
-            neww = (s[:(n**logg + logg)]).lower()
-            result_mr = math.log(len(set([neww[i:(i+logg)] for i in range(1, n**logg+1)])),n)/logg #the topological entropy score
-        else:
-            result_mr = ''
-        return result_mr
+        def topology (self,seq): 
+                '''calculates topological entropy'''
+                s= seq.replace("N","") ##Removes the N in the sequence
+                n = len(set(s)) # number of bases, this is usually equal to 4
+                length = len(s)
+                if len(s) != 0 and n > 1: 
+                    logg = math.floor(math.log(length,n))
+                    neww = (s[:(n**logg + logg)]).lower()
+                    result_mr = math.log(len(set([neww[i:(i+logg)] for i in range(1, n**logg+1)])),n)/logg #the topological entropy score
+                else:
+                    result_mr = ''
+                return result_mr
 
 
 # DISCLAIMER
