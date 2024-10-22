@@ -315,5 +315,8 @@ GBRAP returns in output a comma-separated file (CSV) that could be imported into
 
 •	ATG, AAG, GTA, etc.: Count of respective codons in CDS.
 
+# DISCLAIMER
+
+We will have no responsibility or liability in relation to any loss or damage that you incur, including damage to your software or hardware, arising from your use of GBRAP (github/tacclab/GBRAP).
 
 
