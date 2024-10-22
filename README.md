@@ -321,9 +321,7 @@ In 1950, Erwin Chargaff discovered that the four nucleotides contained in a DNA 
 
 † Chargaff's second parity rule score calculated using an easy method (PF)
 
-An easy way to calculate Chargaff’s second parity rule is this:
-
-ABS((((#A-#T))⁄((#A+#T)))+(((#C-#G))⁄((#C+#G))))
+        ABS((((#A-#T))⁄((#A+#T)))+(((#C-#G))⁄((#C+#G))))
 
 where "#" means "number of" and A = Adenines, T = Thymines, C = Cytosines and G = Guanines. 
 
@@ -347,9 +345,8 @@ Python 3 code is as follows:
 
 †  Chargaff's second parity rule score calculated using Cristian Taccioli (CT) method 
 
-Chargaff’s second parity rule score calculated using Cristian Taccioli’s method is:
-
-(((#A)/(#T)+ (#C)/(#G)))/2,where #T and #G ≠0
+        (((#A)/(#T)+ (#C)/(#G)))/2,where #T and #G ≠0
+        
 The bases with the highest value must be placed in the denominator.
  In this example A and C have a lower value than T and G respectively. 
 
@@ -375,7 +372,11 @@ The concept of entropy was introduced in the early 19th century by Rudolf Julius
 
 †  Shannon score 
 The term entropy in information sciences was introduced by Shannon in the paper "A Mathematical Theory of Communication" (Shannon, 1948). Shannon entropy is calculated as follows:
-H(X)=-∑_(i=1)^n▒〖〖P(x〗_i)logP〗 〖(x〗_i), where P is the frequency of nucleotides
+
+        H(X)=-∑_(i=1)^n▒〖〖P(x〗_i)logP〗 〖(x〗_i) 
+        
+where P is the frequency of nucleotides
+
 Python 3 code for Shannon entropy is:
         def shannon (self,seq,base_counts):
                 ''' calculates shanon entropy'''
