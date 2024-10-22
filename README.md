@@ -7,11 +7,11 @@ A comprehensive software tool to analyse GenBank files and an online database, h
 # Installation and Usage
 GBRAP is an open-source tool and is freely available at <insert github link>. Once the user has the gbff file needed to be analysed GBRAP can be used in the command line/ terminal by running the command “. /GBRAP_Args.py in input_file_name.gbff out output_file_name.csv”. GBRAP includes all the needed files for the execution of the complete analysis, and no additional installations are necessary. 
 
-GBRAP returns in output a comma-separated file (CSV) that could be imported into excel. Each file contains:
-Locus ID: Sequence ID
-Definition: Sequence description
-bp_chromo_A: Number of 'A' bases in the whole chromosome/genome
-bp_chromo_T: Number of 'T' bases in the whole chromosome/genome
+GBRAP returns in output a comma-separated file (CSV) that could be imported into excel. Each file contains:\n
+Locus ID: Sequence ID\n
+Definition: Sequence description\n
+bp_chromo_A: Number of 'A' bases in the whole chromosome/genome\n
+bp_chromo_T: Number of 'T' bases in the whole chromosome/genome\n
 •	bp_chromo_C: Number of 'C' bases in the whole chromosome/genome
 •	bp_chromo_G: Number of 'G' bases in the whole chromosome/genome
 •	bp_chromo_N: Number of 'N' bases in the whole chromosome/genome
