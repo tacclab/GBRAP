@@ -419,6 +419,22 @@ Topological entropy is a nonnegative real number that is capable of measuring th
                     result_mr = ''
                 return result_mr
 
+# Reference
+1. Adler R.L. et al. (1965) Topological entropy. Transactions of the American Mathematical Society. 114, 309319.
+
+2. Becker G. et al. (2019) Genbankr: Parsing GenBank files into semantically useful objects. R package version 1.12.0.
+
+3. P. D’Addabbo et al., (2004) GeneRecords: a relational database for GenBank flat file parsing and data manipulation in personal computers. 20, 28832885.
+
+4. Fariselli, P. et al. (2020) DNA sequence symmetries from randomness: the origin of the Chargaff’s second parity rule. 22, 21722181.
+
+5. Koslicki, D. (2011) Topological entropy of DNA sequences. Bioinformatics. 27, 10611067.
+
+6. Lee, T.H. et al. (208) GBParsy: A GenBank flatfile parser library with high speed. BMC Bioinformatics 9, 321. 
+
+7. Shannon, C.E. (1948) A Mathematical Theory of Communication. The Bell System Technical Journal, 27, 379423.
+
+8. Storer, J.A. et al. (1982) Data Compression via Textual Substitution. Journal of the ACM. 29, 928–951.
 
 # DISCLAIMER
 
