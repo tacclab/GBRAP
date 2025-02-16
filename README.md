@@ -353,6 +353,7 @@ where "#" means "number of" and A = Adenines, T = Thymines, C = Cytosines and G 
 
 In this way the perfect Chargaff’s second parity rule score is zero such as in case of “ATGC”. The minimum value depends on the length of the sequence. 
 Python 3 code is as follows:
+```
         def chargaff_pf(self,sequence):
                 '''calculates chargaff score PF'''
                 counts = Counter(sequence)
@@ -368,6 +369,7 @@ Python 3 code is as follows:
                 PF=a_t+c_g
                 
                 return PF
+    ```
 
 †  Chargaff's second parity rule score calculated using Cristian Taccioli (CT) method 
 
@@ -379,6 +381,7 @@ The bases with the highest value must be placed in the denominator.
 "#" means "number of" and A = Adenines, T = Thymines, C = Cytosines and G = Guanines.
  Using this equation Chargaff’s second parity rule score is always between zero and one, where one is the maximum value. For example, the sequence “ATGC” has a perfect score which is one because the number of A is equal to the number of T, whereas the number of C is equal to the number of G. This score does not depend on sequence length. Chargaff’s second parity rule calculated using C.T method can be calculated in Python 3 as follow:
 
+```
          def chargaff_ct(self,sequence):
                 ''' calculates chargaff score CT '''
                 counts = Counter(sequence)
@@ -392,6 +395,7 @@ The bases with the highest value must be placed in the denominator.
                 c_g_ratio = safe_ratio(counts['C'], counts['G'])
         
                 CT = (a_t_ratio + c_g_ratio) / 2
+```
 
 ## Entropy scores calculation
 The concept of entropy was introduced in the early 19th century by Rudolf Julius Emanuel Clausius. It represents a characteristic quantity of the state of a physical system capable of expressing the ability of the system itself to be able to proceed to spontaneous transformations and, consequently, the loss of ability to do work when such transformations occur. In simplified terms, the value of entropy increases when the system undergoes spontaneous variations and therefore loses part of its ability to undergo such variations and perform work. In 1872 Ludwig Boltzmann generalized this concept through the study of statistical mechanics by defining entropy as the degree of disorder of a system. In 1948 Claude Elwood Shannon equated the degree of inaccuracy of a message with disorder. For Shannon, in fact, the entropy of information was the degree of complexity of a message that represents the minimum average number of symbols necessary for the encoding of the message itself.
@@ -405,6 +409,7 @@ The term entropy in information sciences was introduced by Shannon in the paper 
 where P is the frequency of nucleotides
 
 Python 3 code for Shannon entropy is:
+```
         def shannon (self,seq,base_counts):
                 ''' calculates shanon entropy'''
                 nt=base_counts
@@ -426,12 +431,14 @@ Python 3 code for Shannon entropy is:
                         pT=1
                     
                     return -((pA*math.log2(pA))+(pT*math.log2(pT))+(pC*math.log2(pC))+(pG*math.log2(pG)))
+```
           
 
 ### † Topological entropy score
 
 Topological entropy is a nonnegative real number that is capable of measuring the complexity of a message. Topological entropy was first introduced in 1965 by Adler, Konheim and McAndrew (Adler et al. 1965). In 2011 Koslicki has defined a new approximation to topological entropy free from the finite sample effects and high dimensionality problems. The formula and code can be retrieved from Koslicki, 2011 (Koslicki et al. 2011).
 
+```
         def topology (self,seq): 
                 '''calculates topological entropy'''
                 s= seq.replace("N","") ##Removes the N in the sequence
@@ -444,6 +451,7 @@ Topological entropy is a nonnegative real number that is capable of measuring th
                 else:
                     result_mr = ''
                 return result_mr
+```
 
 ## Reference
 1. Adler R.L. et al. (1965) Topological entropy. Transactions of the American Mathematical Society. 114, 309319.
