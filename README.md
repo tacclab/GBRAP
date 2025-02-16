@@ -345,7 +345,7 @@ GBRAP returns in output a comma-separated file (CSV) that could be imported into
 
 In 1950, Erwin Chargaff discovered that the four nucleotides contained in a DNA double helix (A=Adenine, T=Thymine, C=Cytosine and G=Guanine) are symmetrically abundant in both strands of DNA. This symmetry was called Chargaff's first parity rule. In 1968, Chargaff also discovered that also on each DNA strand, the number of Adenines is almost equal to that of Thymines and the number of Cytosines is almost equal to that of Guanines. The first rule was easily explained by the fact that within DNA strands A matches with T, whereas C matches with G. On the single strand, however, this symmetry (Chargaff's second parity rule) is not easily explained. In 2020 four Italian researchers (Fariselli et al., 2020) discovered that this symmetry is linked to the energy of the DNA molecule which has greater stability when it has a Chargaff's second parity rule score close to one.
 
-† Chargaff's second parity rule score calculated using an easy method (PF)
+### † Chargaff's second parity rule score calculated using an easy method (PF)
 
         ABS((((#A-#T))⁄((#A+#T)))+(((#C-#G))⁄((#C+#G))))
 
@@ -371,7 +371,7 @@ Python 3 code is as follows:
                 return PF
 ```
 
-†  Chargaff's second parity rule score calculated using Cristian Taccioli (CT) method 
+### †  Chargaff's second parity rule score calculated using Cristian Taccioli (CT) method 
 
         (((#A)/(#T)+ (#C)/(#G)))/2,where #T and #G ≠0
         
