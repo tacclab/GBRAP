@@ -9,7 +9,7 @@ GBRAP is an open-source tool and is freely available at https://github.com/taccl
 
 The users only need to have the gbff file they want to analyse and the GBRAP script on their computer, and they can run the analysis through the command line. It should be noted that to maintain the quality of the data generated, the GBRAP tool is designed to only generate results for complete chromosomal and mitochondrial (and plastid or plasmid) sequences. The script will not generate any output if the input file is a draft assembly. However, if a user wishes to analyse a draft assembly, they can do so by modifying the ‘skiplocus’ filter in the Python script. 
 
-# To use GBRAP tool,
+# How to use
 # 1. Download the Script: 
 Download the 'GBRAP_command_line_tool.py' from this GitHub repository. Ensure Python (version 3.x) is installed on your system. All necessary libraries are included in the tool, so no additional installations are required.
 
