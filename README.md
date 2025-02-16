@@ -14,7 +14,7 @@ The users only need to have the gbff file they want to analyse and the GBRAP scr
 Download the 'GBRAP_command_line_tool.py' from this GitHub repository. Ensure Python (version 3.x) is installed on your system. All necessary libraries are included in the tool, so no additional installations are required.
 
 ### 2. Download the input file:
-Download the RefSeq genome which you wish to analyse, from https://ftp.ncbi.nlm.nih.gov/genomes/refseq/ in the gbff format. The provided script is only able to analyse chromosomal level assemblies. Draft assemblies will not generate any data. Please modify the 'skiplocus' filter if you wish to analyse a draft assembly. 
+Download the RefSeq genome which you wish to analyse, from https://ftp.ncbi.nlm.nih.gov/genomes/refseq/ in the gbff format. The provided script is able to analyse **only chromosomal level assemblies**. Input files of draft assemblies will not generate any data. Please modify the 'skiplocus' filter if you wish to analyse a draft assembly. 
 
 ### 3. Run the analysis:
 In your command line/terminal, navigate to the folder where the script is located and run either of the following commands:
