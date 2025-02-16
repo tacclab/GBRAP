@@ -341,7 +341,7 @@ GBRAP returns in output a comma-separated file (CSV) that could be imported into
 
 •	ATG, AAG, GTA, etc.: Count of respective codons in CDS.
 
-# Chargaff’s second parity rule (PR2) calculation
+## Chargaff’s second parity rule (PR2) calculation
 
 In 1950, Erwin Chargaff discovered that the four nucleotides contained in a DNA double helix (A=Adenine, T=Thymine, C=Cytosine and G=Guanine) are symmetrically abundant in both strands of DNA. This symmetry was called Chargaff's first parity rule. In 1968, Chargaff also discovered that also on each DNA strand, the number of Adenines is almost equal to that of Thymines and the number of Cytosines is almost equal to that of Guanines. The first rule was easily explained by the fact that within DNA strands A matches with T, whereas C matches with G. On the single strand, however, this symmetry (Chargaff's second parity rule) is not easily explained. In 2020 four Italian researchers (Fariselli et al., 2020) discovered that this symmetry is linked to the energy of the DNA molecule which has greater stability when it has a Chargaff's second parity rule score close to one.
 
@@ -393,10 +393,10 @@ The bases with the highest value must be placed in the denominator.
         
                 CT = (a_t_ratio + c_g_ratio) / 2
 
-# Entropy scores calculation
+## Entropy scores calculation
 The concept of entropy was introduced in the early 19th century by Rudolf Julius Emanuel Clausius. It represents a characteristic quantity of the state of a physical system capable of expressing the ability of the system itself to be able to proceed to spontaneous transformations and, consequently, the loss of ability to do work when such transformations occur. In simplified terms, the value of entropy increases when the system undergoes spontaneous variations and therefore loses part of its ability to undergo such variations and perform work. In 1872 Ludwig Boltzmann generalized this concept through the study of statistical mechanics by defining entropy as the degree of disorder of a system. In 1948 Claude Elwood Shannon equated the degree of inaccuracy of a message with disorder. For Shannon, in fact, the entropy of information was the degree of complexity of a message that represents the minimum average number of symbols necessary for the encoding of the message itself.
 
-†  Shannon score 
+### †  Shannon score 
 
 The term entropy in information sciences was introduced by Shannon in the paper "A Mathematical Theory of Communication" (Shannon, 1948). Shannon entropy is calculated as follows:
 
@@ -428,7 +428,7 @@ Python 3 code for Shannon entropy is:
                     return -((pA*math.log2(pA))+(pT*math.log2(pT))+(pC*math.log2(pC))+(pG*math.log2(pG)))
           
 
-† Topological entropy score
+### † Topological entropy score
 
 Topological entropy is a nonnegative real number that is capable of measuring the complexity of a message. Topological entropy was first introduced in 1965 by Adler, Konheim and McAndrew (Adler et al. 1965). In 2011 Koslicki has defined a new approximation to topological entropy free from the finite sample effects and high dimensionality problems. The formula and code can be retrieved from Koslicki, 2011 (Koslicki et al. 2011).
 
@@ -445,7 +445,7 @@ Topological entropy is a nonnegative real number that is capable of measuring th
                     result_mr = ''
                 return result_mr
 
-# Reference
+## Reference
 1. Adler R.L. et al. (1965) Topological entropy. Transactions of the American Mathematical Society. 114, 309319.
 
 2. Becker G. et al. (2019) Genbankr: Parsing GenBank files into semantically useful objects. R package version 1.12.0.
