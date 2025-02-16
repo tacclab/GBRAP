@@ -19,7 +19,7 @@ Download the RefSeq genome which you wish to analyse, from https://ftp.ncbi.nlm.
 ### 3. Run the analysis:
 In your command line/terminal, navigate to the folder where the script is located and run either of the following commands:
 
-- If you wish to generate the output seperatly for **each chromosome**,
+- If you wish to generate the output for **each chromosome** seperately,
   
 ```
 ./GBRAP_command_line_tool.py -in input_file_name.gbff -out output_file_name.csv -c
