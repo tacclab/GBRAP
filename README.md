@@ -369,7 +369,7 @@ Python 3 code is as follows:
                 PF=a_t+c_g
                 
                 return PF
-    ```
+```
 
 †  Chargaff's second parity rule score calculated using Cristian Taccioli (CT) method 
 
