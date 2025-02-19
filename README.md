@@ -472,21 +472,16 @@ Topological entropy is a nonnegative real number that is capable of measuring th
 ```
 
 ## Reference
-1. Adler R.L. et al. (1965) Topological entropy. Transactions of the American Mathematical Society. 114, 309319.
+1. Adler RL, Konheim AG, McAndrew MH. 1965. Topological entropy. Trans Am Math Soc 114:309–319.
 
-2. Becker G. et al. (2019) Genbankr: Parsing GenBank files into semantically useful objects. R package version 1.12.0.
+2. Fariselli P, Taccioli C, Pagani L, Maritan A. 2020. DNA sequence symmetries from randomness: the origin of the Chargaff second parity rule. Brief. Bioinform.:1–10.
 
-3. P. D’Addabbo et al., (2004) GeneRecords: a relational database for GenBank flat file parsing and data manipulation in personal computers. 20, 28832885.
+3. Goldfarb T, K odali VK, ant Pujar S, ac hesla Bro er V, Robber tse B, F ar rell CM, Oh D-H, Astashyn A, Er molaev O, Haddad D, et al. 2025. NCBI RefSeq: reference sequence standards through 25 years of curation and annotation. Nucleic Acids Res 53:D243–D257.
 
-4. Fariselli, P. et al. (2020) DNA sequence symmetries from randomness: the origin of the Chargaff’s second parity rule. 22, 21722181.
+4. Koslicki D. 2011. Topological entropy of DNA sequences. Bioinformatics 27:1061–1067.
 
-5. Koslicki, D. (2011) Topological entropy of DNA sequences. Bioinformatics. 27, 10611067.
+5. Shannon CE. 1948. A Mathematical Theory of Communication. The Bell System Technical Journal 27:623–656.
 
-6. Lee, T.H. et al. (208) GBParsy: A GenBank flatfile parser library with high speed. BMC Bioinformatics 9, 321. 
-
-7. Shannon, C.E. (1948) A Mathematical Theory of Communication. The Bell System Technical Journal, 27, 379423.
-
-8. Storer, J.A. et al. (1982) Data Compression via Textual Substitution. Journal of the ACM. 29, 928–951.
 
 # DISCLAIMER
 
