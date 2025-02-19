@@ -39,9 +39,21 @@ Then run either of the following commands:
 
 
 ## The Output
-GBRAP returns in output a comma-separated file (CSV) that could be imported into excel. Each file contains:
+GBRAP returns in output a comma-separated file (CSV) that could be imported into excel. If the output file only contains the header row (no data), it means you have used a draft assembly and all the sequences were skipped due to being either 'scaffold', 'unlocalized', 'contig', 'unplaced',' patch', or 'unknown'. If there are 0s for all metrics of some genomic elements (tRNA, rRNA etc.), it means that the genome file does not contain any annotations of that element.
 
-• Locus ID: Sequence ID
+ The output table consists of:
+
+•	Class: The taxonomic group (according to GBRAPs classification) of the organism.
+
+•	Organism: The scientific name 
+
+•	Taxon: The taxonomic classification
+
+•	Assembly: Genome Assembly accession ID
+
+•	Locus ID: Sequence ID
+
+•	Version: Version number of the sequence
 
 • Definition: Sequence description
 
