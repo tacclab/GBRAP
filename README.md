@@ -17,15 +17,21 @@ Download the 'GBRAP_command_line_tool.py' from this GitHub repository. Ensure Py
 Download the RefSeq genome which you wish to analyse, from https://ftp.ncbi.nlm.nih.gov/genomes/refseq/ in the gbff format. The provided script is able to analyse **only chromosomal level assemblies**. Input files of draft assemblies will not generate any data. Please modify the 'skiplocus' filter if you wish to analyse a draft assembly. 
 
 ### 3. Run the analysis:
-In your command line/terminal, navigate to the folder where the script is located and run either of the following commands:
+Open the command line/terminal on your computer, navigate to the folder where the script is located using the command,
 
-- If you wish to generate the output for **each chromosome** seperately,
+```
+cd /path/to/the/folder
+```
+
+Then run either of the following commands:
+
+- If you wish to generate the output for **each chromosome** seperately (one CSV file with data of each chromosomal/mitochondrial/plasmid sequence separately in each row),
   
 ```
 ./GBRAP_command_line_tool.py -in input_file_name.gbff -out output_file_name.csv -c
 ```
 
-- If you wish to generate the output for the **whole genome** at once,
+- If you wish to generate the output for the **whole genome** at once (one CSV file with the data of the whole genome summed up to one row),
   
 ```
 ./GBRAP_command_line_tool.py -in input_file_name.gbff -out output_file_name.csv -g
