@@ -422,7 +422,7 @@ The concept of entropy was introduced in the early 19th century by Rudolf Julius
 
 The term entropy in information sciences was introduced by Shannon in the paper "A Mathematical Theory of Communication" (Shannon, 1948). Shannon entropy is calculated as follows:
 
-        ![Shannon Equation](Shannon_equation.png)
+        ![Shannon Equation](https://github.com/tacclab/GBRAP/blob/main/Shannon_equation.png)
 
         
 where P is the frequency of nucleotides
