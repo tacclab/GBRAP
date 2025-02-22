@@ -673,7 +673,7 @@ class GBRAP():
                     else:
                         assembly='NA'
                     
-                    fullseq=re.findall('ORIGIN\s*\n\s*(.*)',result,re.S) #takes the sequence region of the locus from the gbff
+                    fullseq=re.findall('ORIGIN\s*\n\s*(.*)',result,re.S) #ignore this warning. it is only due to new python version
                     se=[g.replace(' ','').replace('\n','').replace('\t','') for g in fullseq] #replaces the \s \n and \t
                     seq=re.sub("[^a-zA-Z]","",str(se).lower())   #the whole sequene of the locus ready to use removes the numbers
                     features=re.search(r'FEATURES\s*Location/Qualifiers(.*?)ORIGIN',result,re.S) #takes all the details of the annotations
