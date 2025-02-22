@@ -634,7 +634,7 @@ class GBRAP():
                     organism=org.group(1).replace(' ','_') #takes the organism name
                     print(f'\nGBRAP Analysis started for {organism}\n--')
                     
-                    category_dict={'Mammal':['Mammalia'],'Amphibia':['Amphibia'],'Reptile':['Lepidosauria','Crocodylia','Testudines'],'Bird':['Aves,'],
+                    category_dict={'Mammal':['Mammalia'],'Amphibia':['Amphibia'],'Reptile':['Lepidosauria','Crocodylia','Testudines'],'Bird':['Aves;'],
                                  'Fish':['Dipnomorpha','Actinopterygii','Chondrichthyes','Cyclostomata','Coelacanthiformes'],'Plant':['Viridiplantae','Rhodophyta'],
                                  'Protozoa':['Sar','Discoba','Amoebozoa','Metamonada','Cryptophyceae'],'Fungi':['Fungi'],'Bacteria':['Bacteria'],'Archaea':['Archaea'],'Virus':['Viruses'],
                                  'Invertebrate':['Arthropoda','Cephalochordata','Tunicata','Nematoda','Cnidaria','Mollusca','Echinodermata','Hemichordata','Platyhelminthes','Ctenophora','Porifera','Brachiopoda','Choanoflagellata','Scalidophora','Xenacoelomorpha']}
