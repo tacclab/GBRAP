@@ -1278,7 +1278,7 @@ class GBRAP():
             if analysed_chromo==0:
                 print("\nUnfortunately the input file does not contain any complete chromosomal/mitochondrial or plasmid sequences to analyse.There won't be any data in the output file\nPlease re try with another version or another organism.")
                 
-            print ("\nSKIPPED",skipped, "loci due to being either","/".join(skiplocus) )
+            print ("\nSKIPPED",skipped, "sequences due to being either","/".join(skiplocus) )
               
 
 def main():
