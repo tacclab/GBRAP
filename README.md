@@ -55,309 +55,195 @@ GBRAP returns in output a comma-separated file (CSV) that could be imported into
 
 •	Version: Version number of the sequence
 
-• Definition: Sequence description
+•	Definition: Sequence description
 
-• bp_chromo_A: Number of 'A' bases in the whole chromosome/genome
+•	bp_chromo_A: Total number of 'A' nucleotides in the whole sequence
 
-• bp_chromo_T: Number of 'T' bases in the whole chromosome/genome
+•	bp_chromo_T: Total number of 'T' nucleotides in the whole sequence
 
-•	bp_chromo_C: Number of 'C' bases in the whole chromosome/genome
+•	bp_chromo_C: Total number of 'C' nucleotides in the whole sequence
 
-•	bp_chromo_G: Number of 'G' bases in the whole chromosome/genome
+•	bp_chromo_G: Total number of 'G' nucleotides in the whole sequence
 
-•	bp_chromo_N: Number of 'N' bases in the whole chromosome/genome
+•	bp_chromo_N: Total number of 'N' nucleotides in the whole sequence
 
-•	bp_chromo_total: Total number of bases in the whole chromosome/genome
+•	bp_chromo_tot: Total number of nucleotides in the whole sequence
 
-•	fr_chromo_A: Frequency of 'A' bases among total the whole chromosome/genome bases
+•	fr_chromo_A: Frequency of 'A' nucleotides in the whole sequence 
 
-•	fr_chromo_T: Frequency of 'T' bases among total the whole chromosome/genome bases
+•	fr_chromo_T: Frequency of 'T' nucleotides in the whole sequence 
 
-•	fr_chromo_C: Frequency of 'C' bases among total the whole chromosome/genome bases
+•	fr_chromo_C: Frequency of 'C' nucleotides in the whole sequence 
 
-•	fr_chromo_G: Frequency of 'G' bases among total the whole chromosome/genome bases
+•	fr_chromo_G: Frequency of 'G' nucleotides in the whole sequence 
 
-•	fr_chromo_N: Frequency of 'N' bases among total the whole chromosome/genome bases
+•	fr_chromo_N: Frequency of 'N' nucleotides in the whole sequence 
 
-•	GC_chromo: Percentage of 'G' and 'C' bases in the whole chromosome/genome
+•	GC_chromo: Percentage of ‘G’ and ‘C’ nucleotides in the whole sequence
 
-•	chromo_topological_entropy: Topological entropy calculated from the whole chromosome/genome
+•	topo_entropy_chromo: Topological entropy of the whole sequence
 
-•	chromo_chargaff_pf: Chargaff's second parity rule score (method1) for the whole chromosome/genome
+•	chargaff_pf_chromo: Chargaff's second parity rule score (method1) of the whole sequence
 
-•	chromo_chargaff_ct: Chargaff's second parity rule score (method2) for the whole chromosome/genome
+•	chargaff_ct_chromo: Chargaff's second parity rule score (method2) of the whole sequence
 
-•	chromo_shannon: Shannon entropy score for the whole chromosome/genome
+•	shannon_chromo: Shannon entropy score of the whole sequence
 
-•	n_gene_pos: Number of genes in the positive strand
+•	n_gene_pos: Total number of genes located on the positive strand
 
-•	n_gene_neg: Number of genes in the negative strand
+•	n_gene_neg: Total number of genes located on the negative strand
 
-•	n_gene_tot: Total number of genes in the chromosome
+•	n_gene_tot: Total number of genes in the sequence
 
-•	bp_gene_A: Number of 'A' bases in total genes
+•	bp_gene_A: Total number of 'A' nucleotides in total genes
 
-•	bp_gene_T: Number of 'T' bases in total genes
+•	bp_gene_T: Total number of 'T' nucleotides in total genes
 
-•	bp_gene_C: Number of 'C' bases in total genes
+•	bp_gene_C: Total number of 'C' nucleotides in total genes
 
-•	bp_gene_G: Number of 'G' bases in total genes
+•	bp_gene_G: Total number of 'G' nucleotides in total genes
 
-•	bp_gene_N: Number of 'N' bases in total genes
-
-•	bp_gene_total: Total number of bases in total genes
-
-•	fr_gene_A: Frequency of 'A' bases among total gene bases
-
-•	fr_gene_T: Frequency of 'T' bases among total gene bases
-
-•	fr_gene_C: Frequency of 'C' bases among total gene bases
-
-•	fr_gene_G: Frequency of 'G' bases among total gene bases
-
-•	fr_gene_N: Frequency of 'N' bases among total gene bases
-
-•	GC_gene: Percentage of 'G' and 'C' bases in total genes
-
-•	gene_topological_entropy: Topological entropy calculated from total gene sequences
-
-•	gene_chargaff_pf: Chargaff's second parity rule score (method1) for total genes
-
-•	gene_chargaff_ct: Chargaff's second parity rule score (method2)for total genes
-
-•	gene_shannon: Shannon entropy score for total genes
-
-•	bp_gene_overlap_total: Number of bases overlapping between genes on two strands
-
-•	n_cds_pos: Number of CDS in the positive strand
-
-•	n_cds_neg: Number of CDS in the negative strand
-
-•	n_cds_tot: Total number of CDS in the chromosome
-
-•	bp_cds_A: Number of 'A' bases in total CDS (coding sequences)
-
-•	bp_cds_T: Number of 'T' bases in total CDS
-
-•	bp_cds_C: Number of 'C' bases in total CDS
-
-•	bp_cds_G: Number of 'G' bases in total CDS
-
-•	bp_cds_N: Number of 'N' bases in total CDS
-
-•	bp_cds_total: Total bases in total CDS
-
-•	fr_cds_A: Frequency of 'A' bases among total CDS bases
-
-•	fr_cds_T: Frequency of 'T' bases among total CDS bases
-
-•	fr_cds_C: Frequency of 'C' bases among total CDS bases
-
-•	fr_cds_G: Frequency of 'G' bases among total CDS bases
-
-•	fr_cds_N: Frequency of 'N' bases among total CDS bases
-
-•	GC_cds: Percentage of 'G' and 'C' bases in total CDS
-
-•	cds_topological_entropy: Topological entropy calculated from total CDS sequences
-
-•	cds_chargaff_pf: Chargaff's second parity rule score (method1) for total CDS
-
-•	cds_chargaff_ct: Chargaff's second parity rule score (method2) for total CDS
-
-•	cds_shannon: Shannon entropy score for total CDS
-
-•	bp_cds_overlap_total: Number of bases overlapping between CDS on two strands
-
-•	bp_cds_intron_A: Number of 'A' bases in total introns between CDS
-
-•	bp_cds_intron_T: Number of 'T' bases in total introns between CDS
-
-•	bp_cds_intron_C: Number of 'C' bases in total introns between CDS
-
-•	bp_cds_intron_G: Number of 'G' bases in total introns between CDS
-
-•	bp_cds_intron_N: Number of 'N' bases in total introns between CDS
-
-•	bp_cds_intron_total: Total bases in total introns between CDS
-
-•	fr_cds_intronn_A: Frequency of 'A' bases in total introns between CDS
-
-•	fr_cds_intron_T: Frequency of 'T' bases in total introns between CDS
-
-•	fr_cds_intron_C: Frequency of 'C' bases in total introns between CDS
-
-•	fr_cds_intron_G: Frequency of 'G' bases in total introns between CDS
-
-•	fr_cds_intron_N: Frequency of 'N' bases in total introns between CDS
-
-•	GC_cds_intron: Percentage of 'G' and 'C' bases in total introns between CDS
-
-•	cds_intron_topological_entropy: Topological entropy calculated from total intron sequences between CDS
-
-•	cds_intron_chargaff_pf: Chargaff's second parity rule score (method1) for total introns between CDS
-
-•	cds_intron_chargaff_ct: Chargaff's second parity rule score (method2) for total introns between CDS
-
-•	cds_intron_shannon: Shannon entropy score for total introns between CDS
-
-•	bp_cds_intron_overlap_total: Number of bases overlapping between introns between CDS on two strands
-
-•	n_ncRNA_pos: Number of ncRNA in the positive strand
-
-•	n_ncRNA_neg: Number of ncRNA in the negative strand
-
-•	n_ncRNA_tot: Total number of ncRNA in the chromosome
-
-•	bp_ncRNA_A: Number of 'A' bases in total ncRNA
-
-•	bp_ncRNA_T: Number of 'T' bases in total ncRNA
-
-•	bp_ncRNA_C: Number of 'C' bases in total ncRNA
-
-•	bp_ncRNA_G: Number of 'G' bases in total ncRNA
-
-•	bp_ncRNA_N: Number of 'N' bases in total ncRNA
-
-•	bp_ncRNA_total: Total bases in total ncRNA
-
-•	fr_ncRNA_A: Frequency of 'A' bases among total ncRNA bases
-
-•	fr_ncRNA_T: Frequency of 'T' bases among total ncRNA bases
-
-•	fr_ncRNA_C: Frequency of 'C' bases among total ncRNA bases
-
-•	fr_ncRNA_G: Frequency of 'G' bases among total ncRNA bases
-
-•	fr_ncRNA_N: Frequency of 'N' bases among total ncRNA bases
-
-•	GC_ncRNA: Percentage of 'G' and 'C' bases in total ncRNA
-
-•	ncRNA_topological_entropy: Topological entropy calculated from total ncRNA sequences
-
-•	ncRNA_chargaff_pf: Chargaff's second parity rule score (method1) for total ncRNA
-
-•	ncRNA_chargaff_ct: Chargaff's second parity rule score (method2) for total ncRNA
-
-•	ncRNA_shannon: Shannon entropy score for total ncRNA
-
-•	bp_ncRNA_overlap_total: Number of bases overlapping between ncRNA on two strands
-
-•	bp_ncintron_A: Number of 'A' bases in total introns between ncRNA
-
-•	bp_ncintron_T: Number of 'T' bases in total introns between ncRNA
-
-•	bp_ncintron_C: Number of 'C' bases in total introns between ncRNA
-
-•	bp_ncintron_G: Number of 'G' bases in total introns between ncRNA
-
-•	bp_ncintron_N: Number of 'N' bases in total introns between ncRNA
-
-•	bp_ncintron_total: Total bases in total introns between ncRNA
-
-•	fr_ncintron_A: Frequency of 'A' bases in total introns between ncRNA
-
-•	fr_ncintron_T: Frequency of 'T' bases in total introns between ncRNA
-
-•	fr_ncintron_C: Frequency of 'C' bases in total introns between ncRNA
-
-•	fr_ncintron_G: Frequency of 'G' bases in total introns between ncRNA
-
-•	fr_ncintron_N: Frequency of 'N' bases in total introns between ncRNA
-
-•	GC_ncintron: Percentage of 'G' and 'C' bases in total introns between ncRNA
-
-•	ncintron_topological_entropy: Topological entropy calculated from total intron sequences between ncRNA
-
-•	ncintron_chargaff_pf: Chargaff's second parity rule score (method1) for total introns between ncRNA
-
-•	ncintron_chargaff_ct: Chargaff's second parity rule score (method2) for total introns between ncRNA
-
-•	ncintron_shannon: Shannon entropy score for total introns between ncRNA
-
-•	bp_ncintron_overlap_total: Number of bases overlapping between introns between ncRNA on two strands
-
-•	n_tRNA_pos: Number of tRNA in the positive strand
-
-•	n_tRNA_neg: Number of tRNA in the negative strand
-
-•	n_tRNA_tot: Total number of tRNA in the chromosome
-
-•	bp_tRNA_A: Number of 'A' bases in total tRNA
-
-•	bp_tRNA_T: Number of 'T' bases in total tRNA
-
-•	bp_tRNA_C: Number of 'C' bases in total tRNA
-
-•	bp_tRNA_G: Number of 'G' bases in total tRNA
-
-•	bp_tRNA_N: Number of 'N' bases in total tRNA
-
-•	bp_tRNA_total: Total bases in total tRNA
-
-•	fr_tRNA_A: Frequency of 'A' bases among total tRNA bases
-
-•	fr_tRNA_T: Frequency of 'T' bases among total tRNA bases
-
-•	fr_tRNA_C: Frequency of 'C' bases among total tRNA bases
-
-•	fr_tRNA_G: Frequency of 'G' bases among total tRNA bases
-
-•	fr_tRNA_N: Frequency of 'N' bases among total tRNA bases
-
-•	GC_tRNA: Percentage of 'G' and 'C' bases in total tRNA
-
-•	tRNA_topological_entropy: Topological entropy calculated from total tRNA sequences
-
-•	tRNA_chargaff_pf: Chargaff's second parity rule score (method1) for total tRNA
-
-•	tRNA_chargaff_ct: Chargaff's second parity rule score (method2) for total tRNA
-
-•	tRNA_shannon: Shannon entropy score for total tRNA
-
-•	bp_tRNA_overlap_total: Number of bases overlapping between tRNA on two strands
-
-•	n_rRNA_pos: Number of rRNA in the positive strand
-
-•	n_rRNA_neg: Number of rRNA in the negative strand
-
-•	n_rRNA_tot: Total number of rRNA in the chromosome
-
-•	bp_rRNA_A: Number of 'A' bases in total rRNA
-
-•	bp_rRNA_T: Number of 'T' bases in total rRNA
-
-•	bp_rRNA_C: Number of 'C' bases in total rRNA
-
-•	bp_rRNA_G: Number of 'G' bases in total rRNA
-
-•	bp_rRNA_N: Number of 'N' bases in total rRNA
-
-•	bp_rRNA_total: Total bases in total rRNA
-
-•	fr_rRNA_A: Frequency of 'A' bases among total rRNA bases
-
-•	fr_rRNA_T: Frequency of 'T' bases among total rRNA bases
-
-•	fr_rRNA_C: Frequency of 'C' bases among total rRNA bases
-
-•	fr_rRNA_G: Frequency of 'G' bases among total rRNA bases
-
-•	fr_rRNA_N: Frequency of 'N' bases among total rRNA bases
-
-•	GC_rRNA: Percentage of 'G' and 'C' bases in total rRNA
-
-•	rRNA_topological_entropy: Topological entropy calculated from total rRNA sequences
-
-•	rRNA_chargaff_pf: Chargaff's second parity rule score (method1) for total rRNA
-
-•	rRNA_chargaff_ct: Chargaff's second parity rule score (method2) total rRNA
-
-•	rRNA_shannon: Shannon entropy score for total rRNA
-
-•	bp_rRNA_overlap_total: Number of bases overlapping between rRNA on two strands
-
-•	ATG, AAG, GTA, etc.: Count of respective codons in CDS.
+•	bp_gene_N: Total number of 'N' nucleotides in total genes
+
+•	bp_gene_tot: Total number of nucleotides in total genes
+
+•	fr_gene_A: Frequency of 'A' nucleotides in total genes
+
+•	fr_gene_T: Frequency of 'T' nucleotides in total genes
+
+•	fr_gene_C: Frequency of 'C' nucleotides in total genes
+
+•	fr_gene_G: Frequency of 'G' nucleotides in total genes
+
+•	fr_gene_N: Frequency of 'N' nucleotides in total genes
+
+•	GC_gene: Percentage of ‘G’ and ‘C’ nucleotides in total genes
+
+•	topo_entropy_gene: Topological entropy of total genes 
+
+•	chargaff_pf_gene: Chargaff's second parity rule score (method1) of total genes
+
+•	chargaff_ct_gene: Chargaff's second parity rule score (method2) of total genes
+
+•	shannon_gene: Shannon entropy score of total genes
+
+•	bp_gene_overlap_tot: Total number of nucleotides in overlapping gene regions
+
+•	n_cds_pos: Total number of CDS located on the positive strand
+•	n_cds_neg: Total number of CDS located on the negative strand
+•	n_cds_tot: Total number of CDS in the sequence
+•	bp_cds_A: Total number of 'A' nucleotides in total CDS (coding sequences)
+•	bp_cds_T: Total number of 'T' nucleotides in total CDS
+•	bp_cds_C: Total number of 'C' nucleotides in total CDS
+•	bp_cds_G: Total number of 'G' nucleotides in total CDS
+•	bp_cds_N: Total number of 'N' nucleotides in total CDS
+•	bp_cds_tot: Total nucleotides in total CDS
+•	fr_cds_A: Frequency of 'A' nucleotides in total CDS
+•	fr_cds_T: Frequency of 'T' nucleotides in total CDS
+•	fr_cds_C: Frequency of 'C' nucleotides in total CDS
+•	fr_cds_G: Frequency of 'G' nucleotides in total CDS
+•	fr_cds_N: Frequency of 'N' nucleotides in total CDS
+•	GC_cds: Percentage of ‘G’ and ‘C’ nucleotides in total CDS
+•	topo_entropy_cds: Topological entropy of total CDS 
+•	chargaff_pf_cds: Chargaff's second parity rule score (method1) of total CDS
+•	chargaff_ct_cds: Chargaff's second parity rule score (method2) of total CDS
+•	shannon_cds: Shannon entropy score of total CDS
+•	bp_cds_overlap_tot: Total number of nucleotides in overlapping CDS regions
+•	bp_cds_intron_A: Total number of 'A' nucleotides in total CDS introns
+•	bp_cds_intron_T: Total number of 'T' nucleotides in total CDS introns
+•	bp_cds_intron_C: Total number of 'C' nucleotides in total CDS introns
+•	'bp_cds_intron_G': Total number of 'G' nucleotides in total CDS introns
+•	bp_cds_intron_N: Total number of 'N' nucleotides in total CDS introns
+•	bp_cds_intron_tot: Total nucleotides in total CDS introns
+•	fr_cds_intron_A: Frequency of 'A' nucleotides in total CDS introns
+•	fr_cds_intron_T: Frequency of 'T' nucleotides in total CDS introns
+•	'fr_cds_intron_C': Frequency of 'C' nucleotides in total CDS introns
+•	fr_cds_intron_G: Frequency of 'G' nucleotides in total CDS introns
+•	fr_cds_intron_N: Frequency of 'N' nucleotides in total CDS introns
+•	GC_cds_intron: Percentage of ‘G’ and ‘C’ nucleotides in total CDS introns
+•	topo_entropy_cds_intron: Topological entropy of total intron sequences in CDS
+•	chargaff_pf_cds_intron: Chargaff's second parity rule score (method1) of total introns n CDS
+•	chargaff_ct_cds_intron: Chargaff's second parity rule score (method2) of total CDS introns
+•	shannon_cds_intron: Shannon entropy score of total CDS introns
+•	bp_cds_intron_overlap_tot: Total number of nucleotides in overlapping CDS intron regions
+•	n_ncRNA_pos: Total number of ncRNA located on the positive strand
+•	n_ncRNA_neg: Total number of ncRNA located on the negative strand
+•	n_ncRNA_tot: Total number of ncRNA in the sequence
+•	bp_ncRNA_A: Total number of 'A' nucleotides in total ncRNA
+•	 bp_ncRNA_T: Total number of 'T' nucleotides in total ncRNA
+•	bp_ncRNA_C: Total number of 'C' nucleotides in total ncRNA
+•	bp_ncRNA_G: Total number of 'G' nucleotides in total ncRNA
+•	bp_ncRNA_N: Total number of 'N' nucleotides in total ncRNA
+•	bp_ncRNA_tot: Total nucleotides in total ncRNA
+•	fr_ncRNA_A: Frequency of 'A' nucleotides in total ncRNA
+•	fr_ncRNA_T: Frequency of 'T' nucleotides in total ncRNA
+•	fr_ncRNA_C: Frequency of 'C' nucleotides in total ncRNA
+•	fr_ncRNA_G: Frequency of 'G' nucleotides in total ncRNA
+•	fr_ncRNA_N: Frequency of 'N' nucleotides in total ncRNA
+•	GC_ncRNA: Percentage of ‘G’ and ‘C’ nucleotides in total ncRNA
+•	topo_entropy_ncRNA: Topological entropy of total ncRNA 
+•	chargaff_pf_ncRNA: Chargaff's second parity rule score (method1) of total ncRNA
+•	chargaff_ct_ncRNA: Chargaff's second parity rule score (method2) of total ncRNA
+•	shannon_ncRNA: Shannon entropy score of total ncRNA
+•	bp_ncRNA_overlap_tot: Total number of nucleotides in overlapping ncRNA regions
+•	bp_nc_intron_A: Total number of 'A' nucleotides in total ncRNA introns
+•	bp_nc_intron_T: Total number of 'T' nucleotides in total ncRNA introns
+•	bp_nc_intron_C: Total number of 'C' nucleotides in total ncRNA introns
+•	bp_nc_intron_G: Total number of 'G' nucleotides in total ncRNA introns
+•	bp_nc_intron_N: Total number of 'N' nucleotides in total ncRNA introns
+•	bp_nc_intron_tot: Total nucleotides in total introns between ncRNA
+•	fr_nc_intron_A: Frequency of 'A' nucleotides in total ncRNA introns
+•	fr_nc_intron_T: Frequency of 'T' nucleotides in total ncRNA introns
+•	fr_nc_intron_C: Frequency of 'C' nucleotides in total ncRNA introns
+•	fr_nc_intron_G: Frequency of 'G' nucleotides in total ncRNA introns
+•	fr_nc_intron_N: Frequency of 'N' nucleotides in total ncRNA introns
+•	GC_nc_intron: Percentage of ‘G’ and ‘C’ nucleotides in total ncRNA introns
+•	topo_entropy_nc_intron: Topological entropy of total intron sequences in ncRNA
+•	chargaff_pf_nc_intron: Chargaff's second parity rule score (method1) of total ncRNA introns
+•	chargaff_ct_nc_intron: Chargaff's second parity rule score (method2) of total ncRNA introns
+•	shannon_nc_intron: Shannon entropy score of total ncRNA introns
+•	bp_nc_intron_overlap_tot: Total number of nucleotides in overlapping ncRNA intron regions 
+•	n_tRNA_pos: Total number of tRNA located on the positive strand
+•	n_tRNA_neg: Total number of tRNA located on the negative strand
+•	n_tRNA_tot: Total number of tRNA in the sequence
+•	bp_tRNA_A: Total number of 'A' nucleotides in total tRNA
+•	bp_tRNA_T: Total number of 'T' nucleotides in total tRNA
+•	bp_tRNA_C: Total number of 'C' nucleotides in total tRNA
+•	bp_tRNA_G: Total number of 'G' nucleotides in total tRNA
+•	bp_tRNA_N: Total number of 'N' nucleotides in total tRNA
+•	bp_tRNA_tot: Total nucleotides in total tRNA
+•	fr_tRNA_A: Frequency of 'A' nucleotides in total tRNA
+•	fr_tRNA_T: Frequency of 'T' nucleotides in total tRNA
+•	fr_tRNA_C: Frequency of 'C' nucleotides in total tRNA
+•	fr_tRNA_G: Frequency of 'G' nucleotides in total tRNA
+•	fr_tRNA_N: Frequency of 'N' nucleotides in total tRNA
+•	GC_tRNA: Percentage of ‘G’ and ‘C’ nucleotides in total tRNA
+•	topo_entropy_tRNA: Topological entropy of total tRNA 
+•	chargaff_pf_tRNA: Chargaff's second parity rule score (method1) of total tRNA
+•	chargaff_ct_tRNA: Chargaff's second parity rule score (method2) of total tRNA
+•	shannon_tRNA: Shannon entropy score of total tRNA
+•	bp_tRNA_overlap_tot: Total number of nucleotides in overlapping tRNA regions
+•	n_rRNA_pos: Total number of rRNA located on the positive strand
+•	n_rRNA_neg: Total number of rRNA located on the negative strand
+•	n_rRNA_tot: Total number of rRNA in the sequence
+•	bp_rRNA_A: Total number of 'A' nucleotides in total rRNA
+•	bp_rRNA_T: Total number of 'T' nucleotides in total rRNA
+•	bp_rRNA_C: Total number of 'C' nucleotides in total rRNA
+•	bp_rRNA_G: Total number of 'G' nucleotides in total rRNA
+•	bp_rRNA_N: Total number of 'N' nucleotides in total rRNA
+•	bp_rRNA_tot: Total nucleotides in total rRNA
+•	fr_rRNA_A: Frequency of 'A' nucleotides in total rRNA
+•	fr_rRNA_T: Frequency of 'T' nucleotides in total rRNA
+•	fr_rRNA_C: Frequency of 'C' nucleotides in total rRNA
+•	fr_rRNA_G: Frequency of 'G' nucleotides in total rRNA
+•	fr_rRNA_N: Frequency of 'N' nucleotides in total rRNA
+•	GC_rRNA: Percentage of ‘G’ and ‘C’ nucleotides in total rRNA
+•	topo_entropy_rRNA: Topological entropy of total rRNA 
+•	chargaff_pf_rRNA: Chargaff's second parity rule score (method1) of total rRNA
+•	chargaff_ct_rRNA: Chargaff's second parity rule score (method2) of total rRNA
+•	shannon_rRNA: Shannon entropy score of total rRNA
+•	bp_rRNA_overlap_tot: Total number of nucleotides in overlapping rRNA regions
+•	ATG AAG GTA etc.: Count of respective codons in CDS (Codon usage).
 
 ## Chargaff’s second parity rule (PR2) calculation
 
